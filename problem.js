@@ -25,7 +25,7 @@ CHALLENGE
 // variabe for user to enter password
 // finally console log out what the result is for the entered password.
 
-let password = "babo";
+let password = "Gilbert";// value to match against the user's entered password
 let passwordLength = 5;
 
 function checkPassword(enteredPassword) { // to display output for the entered password
@@ -48,6 +48,14 @@ function checkLength(enteredPassword) { //to check lenth of the entered password
     }
 }
 
-let enteredPassword = "babo" //enter password here
+let example1 = "Gilbert" //enter passwords here
+let example2 = "Jill" 
+let example3 = "forgot" 
+let example4 = "reset" 
 
-console.log(`${checkPassword(enteredPassword)}. ${checkLength(enteredPassword)}`);
+console.log(`Entered Password: ${example1} | ${checkPassword(example1)}. ${checkLength(example1)}`);
+console.log(`Entered Password: ${example2} | ${checkPassword(example2)}. ${checkLength(example2)}`);
+console.log(`Entered Password: ${example3} | ${checkPassword(example3)}. ${checkLength(example3)}`);
+console.log(`Entered Password: ${example4} | ${checkPassword(example4)}. ${checkLength(example4)}`);
+
+
