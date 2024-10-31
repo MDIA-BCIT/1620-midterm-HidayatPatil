@@ -13,3 +13,41 @@ CHALLENGE
 - If the password is less than 5 characters, log out "Your password is too short!".
 */
 
+// Completed Problem Below
+
+//------------------------------------------------------------------------------
+
+// define a variable "password" which is what the entered password will be matched against.
+// second variable to check password length, if it's too short
+// create a function with parameter "password" to check against entered value by user
+// there will be 5 if else conditions each for the required result.
+// add function to run condition to check password length.
+// variabe for user to enter password
+// finally console log out what the result is for the entered password.
+
+let password = "babo";
+let passwordLength = 5;
+
+function checkPassword(enteredPassword) { // to display output for the entered password
+    if (enteredPassword === password) {
+        return `Access Granted`
+    } else if (enteredPassword === "forgot") {
+        return `Here is a hint`
+    } else if (enteredPassword === "reset") {
+        return `Let's reset your account` 
+    } else {
+        return `Access Denied`
+    }
+}
+
+function checkLength(enteredPassword) { //to check lenth of the entered password
+    if (enteredPassword.length < passwordLength) {
+        return `Your password is too short!`
+    } else {
+        return ``
+    }
+}
+
+let enteredPassword = "babo" //enter password here
+
+console.log(`${checkPassword(enteredPassword)}. ${checkLength(enteredPassword)}`);
